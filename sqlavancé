@@ -1,4 +1,4 @@
-SELECT t.name, count(*) as nb_wizzard from player as p join team as t on t.id=p.team_id GROUP BY t.id ORDER BY t.id asc;
+SELECT t.name, count(*) as nb_wizzard from player as p join team as t on t.id=p.team_id GROUP BY t.id ORDER BY t.id desc;
 
 SELECT t.name, count(*) as nb_wizzard from player as p join team as t on t.id=p.team_id GROUP BY t.id HAVING nb_wizzard > 14 order by name asc;
 
